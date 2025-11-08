@@ -48,14 +48,14 @@ class KruscalAlgorithm:
 numNodes = 8
 graph = KruscalAlgorithm(numNodes)
 
-graph.addEdge(1-1, 2-1, 1)  
-graph.addEdge(1-1, 3-1, 7)  
-graph.addEdge(3-1, 4-1, 2)  
-graph.addEdge(2-1, 4-1, 5)  
-graph.addEdge(2-1, 5-1, 6)  
-graph.addEdge(5-1, 7-1, 9)  
-graph.addEdge(5-1, 6-1, 3)  
-graph.addEdge(6-1, 8-1, 8)  
-graph.addEdge(7-1, 8-1, 4)
+graph.addEdge(0, 1, 1)  
+graph.addEdge(1-1, 2, 7)  
+graph.addEdge(2, 3, 2)  
+graph.addEdge(1, 3, 5)  
+graph.addEdge(1, 4, 6)  
+graph.addEdge(4, 6, 9)  
+graph.addEdge(4, 5, 3)  
+graph.addEdge(5, 7, 8)  
+graph.addEdge(6, 7, 4)
 
 graph.MSTKruscal()
