@@ -26,7 +26,6 @@ The implementations focus on the logic and practical application of standard alg
 * [Depth-First Search (DFS)](GA/Graphs/DFS.py)
 * [Prim's Algorithm](GA/Graphs/prims.py)
 * [Kruskal's Algorithm](GA/Graphs/kruscal.py)
-* [Ford-Fulkerson Algorithm](GA/Graphs/FF.py)
 * [Dijkstra's Algorithm](GA/Graphs/DJA.py)
 * [Bellman-Ford Algorithm](GA/Graphs/bellmanFord.py)
 
