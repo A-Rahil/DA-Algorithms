@@ -1,8 +1,21 @@
+import heapq
 def Djikstra(graph, start):
-    queue = graph.keys()
-    visited = []
-        
-
+    costs = {node: float('inf') for node in graph}
+    visited = set()
+    priorityQueue = []
+    costs[start] = 0
+    heapq.heappush(priorityQueue, (0, start))
+    while priorityQueue:
+        currentCost, node = heapq.heappop(priorityQueue)
+        if node in visited:
+            continue
+        visited.add(node)
+        for v, weight in graph[node].items():
+            if v not in visited and weight + currentCost < costs[v]:
+                costs[v] = weight + currentCost
+                heapq.heappush(priorityQueue, (weight, v))
+    return costs
+    
 graph = {
     's': {'d': 3, 'b': 8, 'e': 10},
     'd': {'b': 14, 's': 3},
@@ -13,3 +26,6 @@ graph = {
     'f': {'c': 9},
     'g': {'e': 15}
 }
+
+costs = Djikstra(graph, 's')
+print(costs)
