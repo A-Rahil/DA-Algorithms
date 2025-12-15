@@ -1,6 +1,6 @@
 # Design and Analysis of Algorithms
 
-This repository contains implementations of fundamental algorithms covered in the Design and Analysis of Algorithms course.
+This repository contains implementations of fundamental algorithms covered in the Design and Analysis of Algorithms course, crreated as a resource for students.
 
 ## Overview
 
